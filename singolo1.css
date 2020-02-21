@@ -1,3 +1,149 @@
+/*Задаем переменные для дальнейшего удобства*/
+:root {
+  --menu-color-text: #fff; /* Цвет текста меню */
+  --slider-light: #f06c64; /* Цвет фона слайдера*/
+  --menu-bg-color: #2d303a; /*Цвет фона меню*/
+  --services-bg-color: #f2f2f2; /* Цвет фона , пока в разделе сирвисы*/
+  --services-text: #666d89; /* Цвет текста контента, пока в разделе сервисы */
+}
+
 *{
-  margin:0;
+	margin:0;
+	padding:0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+	width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+.header{
+	background-color: var(--menu-bg-color);
+}
+
+.header_logo{
+	color: var(--menu-color-text);
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1;
+  letter-spacing: -.55px;
+}
+
+.header_container a{
+	color: var(--menu-color-text);
+	text-decoration: none;
+	text-transform: uppercase;
+	display:inline-block;
+}
+
+.header_container{
+	display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header_logo_star{
+	color:var(--slider-light);
+}
+.header_menu{
+	display:flex;
+  float:right;
+}
+
+.header_menu_list{
+	list-style: none;
+	display:inline-block;
+	margin-right: 29px;
+  cursor: pointer;
+  transition: color .2s linear;
+  position: relative;
+}
+
+
+.slider {
+	background-color: var(--slider-light);
+}
+
+.slider_container { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	height: 100%;
+}	
+
+.ver_img{
+  padding: 53px 0 0 72px;
+}
+
+.hor_img{
+  padding: 54px 174px 0 23px;
+}
+
+.services{
+  color: var(--services-text);
+}
+
+.services_title{
+  margin-bottom: 16px;
+  font-size: 3rem;
+  font-weight: 400;
+  word-spacing: -1.5px;
+}
+
+.title_p{
+	margin-bottom: 43px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #767e9e;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: -.5px;
+}
+.services_feature{
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature{
+	width:33%;
+	max-width: 299px;
+	max-height: 93px;
+  padding-left: 79px;
+	margin-bottom: 30px;
+  width: 33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.feature_logo{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  padding: 15px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.feature_title{
+	margin-bottom: 9px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.feature_p{
+  font-size: 1.2rem;
+  line-height: 21px;
+	text-align: justify;
+	
 }
