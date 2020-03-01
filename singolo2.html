@@ -3,147 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singolo</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="singolo1.css">
+  <title>Singolo part2</title>
+ <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="singolo2.css">
 </head>
 <body>
-  <header class="header">
+  <section class="portfolio"><a name="portfolio"></a>
     <div class="wrapper">
-      <div class="header_container">
-        <div class="header_logo">
-          <h1><a href="">SINGOLO<span class="header_logo_star">*</span></a></h1>
-        </div>
-        <nav class="header_menu_container">
-          <ul class="header_menu">
-            <li class="header_menu_list"><a href="#">Home</a></li>
-            <li class="header_menu_list"><a href="#serv">Services</a></li>
-            <li class="header_menu_list"><a href="/">Portfolio</a></li>
-            <li class="header_menu_list"><a href="/">About</a></li>
-            <li class="header_menu_list"><a href="/">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <section class="slider">
-    <div class="wrapper">
-      <div class="slider_container">
-        <div class="prev_img">
-          <div class="arrow-left">
-              <img src="assets/img/arrow-left.png" alt="prev-image">
+      <div class="wrapper_inner">
+        <h2 class="portfolio_title">
+          Portfolio
+        </h2>
+        <p class="portfolio_title_p">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit
+        </p>
+        <div class="portfolio_gallery">
+          <div class="gallery_group_buttons">
+            <a class="filter_all"><button class="active_button gallery_filter">All</button></a>
+            <a id="filter_web"><button class="gallery_filter">Web Design</button></a>
+            <a id="filter_Graph"><button class="gallery_filter">Graphic Design</button></a>
+            <a id="filter_art"><button class="gallery_filter">Artwork</button></a>
           </div>
-        </div>
-        <div class="ver_img">
-          <div class="img3">
-            <img class="img1" src="assets/img/vertical.png" alt="vertical-image">
+          <div class="gallery_img">
+            <div class="artwork"><img src="./assets/gallery/img1.jpg" alt=""></div>
+            <div class="web_design"><img src="./assets/gallery/img2.jpg" alt=""></div>
+            <div class="artwork"><img src="./assets/gallery/img3.jpg" alt=""></div>
+            <div class="artwork"><img src="./assets/gallery/img4.jpg" alt=""></div>
+            <div class="artwork"><img src="./assets/gallery/img5.jpg" alt=""></div>
+            <div class="web_design"><img src="./assets/gallery/img6.jpg" alt=""></div>
+            <div class="graphic_design"><img src="./assets/gallery/img7.jpg" alt=""></div>
+            <div class="web_design"><img src="./assets/gallery/img8.jpg" alt=""></div>
+            <div class="graphic_design"><img src="./assets/gallery/img9.jpg" alt=""></div>
+            <div class="graphic_design"><img src="./assets/gallery/img10.jpg" alt=""></div>
+            <div class="graphic_design"><img src="./assets/gallery/img11.jpg" alt=""></div>
+            <div class="web_design"><img src="./assets/gallery/img12.jpg" alt=""></div>
           </div>  
         </div>
-        <div class="hor_img">
-          <div class="img2">
-            <img class="img1" src="assets/img/horizontal.png" alt="horizontal-image">
-          </div>    
-        </div>
-        <div class="next_img">
-          <div class="arrow-right">
-            <img src="assets/img/arrow-right.png" alt="next-image">
-          </div>
-        </div>
-			</div>
+      </div>  
     </div>
   </section>
-  <section class="services" ><a name="serv"></a>
-    <div class="wrapper">
-      <h2 class="services_title">
-          Our Services
+  <section class="about_us"><a name="aboutUs"></a>
+    <div class="wrapper about">
+      <div class="wrapper_inner">
+        <h2 class="about_us_title">
+          About Us
         </h2>
-      <p class="title_p">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
-          erat porttitor 
-          <span class="second_line">ligula, eget lacinia odio sem nec elit.  Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh.
-          </span>
-			</p>
-      <div class="services_feature">
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Pen.png" alt="pen" class="feature_img">
+        <p class="about_description_p">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.
+        </p>
+        <div class="our_humans">
+          <div class="human">
+            <img src="./assets/photo/photo1.png" alt="" class="human_photo">
+            <div class="human_info">
+              <h3 class="human_title">
+                Adam Jensen
+              </h3>
+              <p class="human_description_p">
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec
+                rutrum tellus dolor id lorem.
+              </p>
+            </div>    
+            <div class="human_social_links">
+              <a href="#"><img src="./assets/social-icons/Facebook.png" alt="F" class="socials_icons"></a>
+              <a href="#"><img src="./assets/social-icons/Google.png" alt="G" class="socials_icons"></a>
+              <a href="#"><img src="./assets/social-icons/Twitter.png" alt="T" class="socials_icons"></a>
+              <a href="#"><img src="./assets/social-icons/Linkedin.png" alt="L" class="socials_icons"></a>
+            </div>
           </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              Custom Design
-            </h3>
-            <p class="feature_p">
-              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-            </p>
-          </div>
+            <div class="human">
+              <img src="./assets/photo/photo2.png" alt="" class="human_photo">
+              <div class="human_info">
+                <h3 class="human_title">
+                  Desmond Miles
+                </h3>
+                <p class="human_description_p">
+                  Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                  viverra lacus ut, ultrices velit.
+                </p>
+              </div>  
+              <div class="human_social_links">
+                <a href="#"><img src="./assets/social-icons/Facebook.png" alt="F" class="socials_icons"></a>
+                <a href="#"><img src="./assets/social-icons/Google.png" alt="G" class="socials_icons"></a>
+                <a href="#"><img src="./assets/social-icons/Twitter.png" alt="T" class="socials_icons"></a>
+                <a href="#"><img src="./assets/social-icons/Linkedin.png" alt="L" class="socials_icons"></a>
+              </div>
+            </div>
+              <div class="human">
+                <img src="./assets/photo/photo3.png" alt="" class="human_photo">
+                <div class="human_info">
+                  <h3 class="human_title">
+                    Scolara Visari
+                  </h3>
+                  <p class="human_description_p">
+                    Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                    consequat felis. Quisque condimentum.
+                  </p>
+                </div>  
+                <div class="human_social_links">
+                  <a href="#"><img src="./assets/social-icons/Facebook.png" alt="F" class="socials_icons"></a>
+                  <a href="#"><img src="./assets/social-icons/Google.png" alt="G" class="socials_icons"></a>
+                  <a href="#"><img src="./assets/social-icons/Twitter.png" alt="T" class="socials_icons"></a>
+                  <a href="#"><img src="./assets/social-icons/Linkedin.png" alt="L" class="socials_icons"></a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>  
         </div>
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Bulb.png" alt="bulb" class="feature_img">
-          </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              Inovative Ideas
-            </h3>
-            <p class="feature_p">
-              Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Heart.png" alt="heart" class="feature_img">
-          </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              Love Is The Answer
-            </h3>
-            <p class="feature_p">
-              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Phone.png" alt="phone" class="feature_img">
-          </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              Responsive Layout
-            </h3>
-            <p class="feature_p">
-              Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Bubble.png" alt="bubble" class="feature_img">
-          </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              24 / 7 Support
-            </h3>
-            <p class="feature_p">
-              Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature_logo">
-            <img src="assets/img/Star.png" alt="star" class="feature_img">
-          </div>
-          <div class="feature_description">
-            <h3 class="feature_title">
-              Feel Like A Star
-            </h3>
-            <p class="feature_p">
-              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
-            </p>
-          </div>
-        </div>
-    </div>
   </section>
 </body>
 </html>
