@@ -193,6 +193,7 @@ body {
   background-color: var(--services-bg-color);
   padding-right: 79px;
   border-bottom: solid 6px var(--services-bg-button);
+  height: 396px;	
 }
 
 .services_title{
