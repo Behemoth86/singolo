@@ -43,7 +43,7 @@
   --menu-bg-color: #2d303a; /* Цвет фона меню */
   --menu-bg-button: #323746; /* Цвет линии в headere */
   --services-bg-color: #f2f2f2; /* Цвет фона , пока в разделе сирвисы */
-  --service-bg-button: #ffffff; /* Цвет линии в сервисах */
+  --services-bg-button: #ffffff; /* Цвет линии в сервисах */
   --services-text: #666d89; /* Цвет текста контента, пока в разделе сервисы */
   --shadow-image: #ce5d56; /* Цвет теней для картинок в слайдере */
   --primary-light-bottom: #ea676b;
@@ -207,11 +207,12 @@ body {
 }
 
 .services{
-  padding: 60px 0 38px;
+  padding: 60px 0 41px;
   color: var(--services-text);
   background-color: var(--services-bg-color);
   padding-right: 79px;
   border-bottom: solid 6px var(--services-bg-button);
+  height: 396px;
 }
 
 .services_title{
@@ -352,9 +353,13 @@ img:hover{
 }
 
 .about_us {
-  height: 733px;
+  height: 727px;
   background-color: var(--services-bg-color);
   color: var(--services-text);
+  border-bottom: solid 6px var(--service-bg-button);
+}
+
+
 }
 
 .about_us_title{
