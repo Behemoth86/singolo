@@ -356,7 +356,7 @@ img:hover{
   height: 727px;
   background-color: var(--services-bg-color);
   color: var(--services-text);
-  border-bottom: solid 6px var(--service-bg-button);
+  border-bottom: solid 6px var(--services-bg-button);
 }
 
 .about_us_title{
