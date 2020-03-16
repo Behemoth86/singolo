@@ -14,7 +14,7 @@
           <h1><a href="">SINGOLO<span class="header_logo_star">*</span></a></h1>
         </div>
         <nav class="header_menu_container">
-          <ul class="header_menu">
+          <ul id="head-menu" class="header_menu">
             <li class="header_menu_list"><a href="#">Home</a></li>
             <li class="header_menu_list"><a href="#serv">Services</a></li>
             <li class="header_menu_list"><a href="#portfolio">Portfolio</a></li>
@@ -51,7 +51,7 @@
 			</div>
     </div>
   </section>
-  <section class="services" ><a name="serv"></a>
+  <section id="serv" class="services">
     <div class="wrapper">
       <h2 class="services_title">
           Our Services
@@ -144,7 +144,7 @@
         </div>
     </div>
   </section>
-  <section class="portfolio"><a name="portfolio"></a>
+  <section id="portfolio" class="portfolio">
     <div class="wrapper">
       <div class="wrapper_inner">
         <h2 class="portfolio_title">
@@ -154,31 +154,31 @@
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit
         </p>
         <div class="portfolio_gallery">
-          <div class="gallery_group_buttons">
-            <a class="filter_all"><button class="active_button gallery_filter">All</button></a>
-            <a id="filter_web"><button class="gallery_filter">Web Design</button></a>
-            <a id="filter_Graph"><button class="gallery_filter">Graphic Design</button></a>
-            <a id="filter_art"><button class="gallery_filter">Artwork</button></a>
+          <div id ="gall" class="gallery_group_buttons">
+            <a id="filter_all"><button class="active_button gallery_filter gallery_filter_all">All</button></a>
+            <a id="filter_web"><button class="gallery_filter gallery_filter_web">Web Design</button></a>
+            <a id="filter_Graph"><button class="gallery_filter gallery_filter_graph">Graphic Design</button></a>
+            <a id="filter_art"><button class="gallery_filter gallery_filter_art">Artwork</button></a>
           </div>
-          <div class="gallery_img">
-            <div class="artwork"><img src="./assets/gallery/img1.jpg" alt=""></div>
-            <div class="web_design"><img src="./assets/gallery/img2.jpg" alt=""></div>
-            <div class="artwork"><img src="./assets/gallery/img3.jpg" alt=""></div>
-            <div class="artwork"><img src="./assets/gallery/img4.jpg" alt=""></div>
-            <div class="artwork"><img src="./assets/gallery/img5.jpg" alt=""></div>
-            <div class="web_design"><img src="./assets/gallery/img6.jpg" alt=""></div>
-            <div class="graphic_design"><img src="./assets/gallery/img7.jpg" alt=""></div>
-            <div class="web_design"><img src="./assets/gallery/img8.jpg" alt=""></div>
-            <div class="graphic_design"><img src="./assets/gallery/img9.jpg" alt=""></div>
-            <div class="graphic_design"><img src="./assets/gallery/img10.jpg" alt=""></div>
-            <div class="graphic_design"><img src="./assets/gallery/img11.jpg" alt=""></div>
-            <div class="web_design"><img src="./assets/gallery/img12.jpg" alt=""></div>
+          <div id="gallery_img" class="gallery_img">
+            <div class="artwork"><img class="img" src="./assets/gallery/img1.jpg" alt=""></div>
+            <div class="web_design"><img class="img" src="./assets/gallery/img2.jpg" alt=""></div>
+            <div class="artwork"><img class="img" src="./assets/gallery/img3.jpg" alt=""></div>
+            <div class="artwork"><img class="img" src="./assets/gallery/img4.jpg" alt=""></div>
+            <div class="artwork"><img class="img" src="./assets/gallery/img5.jpg" alt=""></div>
+            <div class="web_design"><img class="img" src="./assets/gallery/img6.jpg" alt=""></div>
+            <div class="graphic_design"><img class="img" src="./assets/gallery/img7.jpg" alt=""></div>
+            <div class="web_design"><img class="img" src="./assets/gallery/img8.jpg" alt=""></div>
+            <div class="graphic_design"><img class="img" src="./assets/gallery/img9.jpg" alt=""></div>
+            <div class="graphic_design"><img class="img" src="./assets/gallery/img10.jpg" alt=""></div>
+            <div class="graphic_design"><img class="img" src="./assets/gallery/img11.jpg" alt=""></div>
+            <div class="web_design"><img class="img" src="./assets/gallery/img12.jpg" alt=""></div>
           </div>  
         </div>
       </div>  
     </div>
   </section>
-  <section class="about_us"><a name="aboutUs"></a>
+  <section id="aboutUs" class="about_us">
     <div class="wrapper about">
       <div class="wrapper_inner">
         <h2 class="about_us_title">
@@ -249,7 +249,7 @@
           </div>  
         </div>
   </section>
-  <section class="quots_contacts"><a name="contacts"></a>
+  <section id="contacts" class="quots_contacts">
     <div class="wrapper">
       <h2 class="quots_contacts_title">
         Get a Quote
@@ -321,6 +321,7 @@
         </div>
       </div>  
     </div>
-  </footer>  
+  </footer> 
+  <script src="script.js"></script> 
 </body>
 </html>
