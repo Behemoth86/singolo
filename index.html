@@ -15,11 +15,11 @@
         </div>
         <nav class="header_menu_container">
           <ul id="head-menu" class="header_menu">
-            <li class="header_menu_list"><a href="#">Home</a></li>
-            <li class="header_menu_list"><a href="#serv">Services</a></li>
-            <li class="header_menu_list"><a href="#portfolio">Portfolio</a></li>
-            <li class="header_menu_list"><a href="#aboutUs">About</a></li>
-            <li class="header_menu_list"><a href="#contacts">Contact</a></li>
+            <li class="header_menu_list"><a href="#" class="home_link">Home</a></li>
+            <li class="header_menu_list"><a href="#serv" class="serv_link">Services</a></li>
+            <li class="header_menu_list"><a href="#portfolio" class="portfolio_link">Portfolio</a></li>
+            <li class="header_menu_list"><a href="#aboutUs" class="aboutUs_link">About</a></li>
+            <li class="header_menu_list"><a href="#contacts" class="contacts_link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -51,7 +51,7 @@
 			</div>
     </div>
   </section>
-  <section id="serv" class="services">
+  <section class="services"><a name="serv" class="ancor"></a>
     <div class="wrapper">
       <h2 class="services_title">
           Our Services
@@ -144,7 +144,7 @@
         </div>
     </div>
   </section>
-  <section id="portfolio" class="portfolio">
+  <section id="portfolioid" class="portfolio"><a name="portfolio" class="ancor"></a>
     <div class="wrapper">
       <div class="wrapper_inner">
         <h2 class="portfolio_title">
@@ -178,7 +178,7 @@
       </div>  
     </div>
   </section>
-  <section id="aboutUs" class="about_us">
+  <section class="about_us"><a name="aboutUs" class="ancor"></a>
     <div class="wrapper about">
       <div class="wrapper_inner">
         <h2 class="about_us_title">
@@ -249,7 +249,7 @@
           </div>  
         </div>
   </section>
-  <section id="contacts" class="quots_contacts">
+  <section class="quots_contacts"><a name="contacts" class="ancor"></a>
     <div class="wrapper">
       <h2 class="quots_contacts_title">
         Get a Quote
@@ -260,13 +260,21 @@
         cursus commodo, tortor mauris condimentum nibh.
       </p>
       <div class="quots">
-        <form action="/" method="post">
-            <input type="text" class="form_input" value="Name (Required)" required>
-            <input type="email" class="form_input" value="Email (Required)" required>
-            <input type="text" class="form_input" value="Subject">
-            <textarea class="describe_text">Describe your project in detail...</textarea>
-            <button type="submit" class="form_input form_button">Send</button>
-          </form>
+        <form id="button_submit">
+            <input type="text" id="name_input" class="form_input" placeholder="Name (Required)" required pattern="^[a-zA-Zа-яА-ЯёЁ]+ [a-zA-Zа-яА-ЯёЁ]+$">
+            <input type="email" id="email_input" class="form_input" placeholder="Email (Required)" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+[.]+[a-z]{2,4}$">
+            <input type="text" id="theme_input" class="form_input" placeholder="Subject">
+            <textarea class="describe_text" id="describe_input" placeholder="Describe your project in detail..."></textarea>
+						<button id="send_button" type="submit" class="form_input form_button">Send</button>
+					<div id="message_box" class="invisible_mes">
+						<div class="message_block">
+							<p><span id="textm" class="text_message" ></span></p>
+				  		<p><span id="theme class="text_message""></span></p>
+							<p class="describe_message"><span id="describem class="text_message""></span></p>
+							<button id="close_button class="message_button"">CLOSE</button>
+						</div>
+					</div>
+				</form>
         <div class="contacts">
           <h3 class="contacts_title">
             Contact Information
@@ -307,7 +315,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer id="footerid" class="footer">
     <div class="wrapper">
       <div class="copyrights_wrapper">
         <div class="copyrights">
