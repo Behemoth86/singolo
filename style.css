@@ -77,6 +77,8 @@ body {
   padding: 32px 0 30px;
   background-color: var(--menu-bg-color);
   border-bottom: solid 6px var(--menu-bg-button);
+  position: sticky;
+  top: 0;
 }
 
 .header_container{
@@ -106,6 +108,10 @@ body {
 }
 
 .header_menu_container a:hover{
+  color: var(--slider-light);
+}
+
+.header_menu_container a.active{
   color: var(--slider-light);
 }
 
@@ -335,6 +341,7 @@ body {
   margin-right: 1px;
   color:var(--menu-color-text);
   border-color: var(--menu-color-text);
+  outline: none;
 }
 
 .gallery_img{
@@ -346,6 +353,10 @@ body {
 .artwork, .web_design, .graphic_design{
   padding-right: 20px;
   padding-bottom: 15px;
+}
+
+.clicked_img{
+  border: 5px solid #F06C64;
 }
 
 img:hover{
