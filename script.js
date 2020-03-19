@@ -7,6 +7,8 @@ const BUTTON_SUBMIT = document.getElementById("button_submit");
 const BUTTON= document.getElementById("send_button");
 const CLOSE_BUTTON= document.getElementById("close_button");
 const FOOTER= document.getElementById('footerid');
+const SLIDER_BACK = document.getElementById("slider_back");
+const SLIDES = document.getElementsByClassName("slide");
 
 //Активные элементы шапки
 MENU.addEventListener('click', (event) => {
@@ -17,6 +19,34 @@ MENU.addEventListener('click', (event) => {
 		FOOTER.classList.add('footer_wrap');
 	} 
 });
+
+//Работа со слайдером
+
+function minusSlide() {
+  showSlides(slideIndex -= 1);  
+}
+
+// Устанавливает текущий слайд 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+//Показ слайдов
+function showSlides(n) {
+  var i;
+  if (n > SLIDES.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+      slideIndex = SLIDES.length
+  }
+  for (i = 0; i < SLIDES.length; i++) {
+    SLIDES[i].style.display = "none";
+  }
+
+  SLIDES[slideIndex - 1].style.display = "block";
+}
+
 
 //Нажатие кнопок в секции портфолио
 GALLERY.addEventListener('click',(event) => {
@@ -63,7 +93,7 @@ BUTTON.addEventListener('click', (e) => {
 			e.preventDefault();
 			const theme= document.getElementById('theme_input').value.toString();
 			const describe= document.getElementById('describe_input').value.toString();
-			document.getElementById('textm').innerText = 'Письмо отправлено';
+			document.getElementById('textm').innerText = 'Письмо отправлено!';
 			if (theme!== '') {
 					document.getElementById('theme').innerText= 'Тема: ' + theme;
 			}

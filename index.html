@@ -25,26 +25,55 @@
       </div>
     </div>
   </header>
-  <section class="slider">
+  <section id="slider_back" class="slider">
     <div class="wrapper">
       <div class="slider_container">
         <div class="prev_img">
-          <div class="arrow-left">
+          <div class="arrow-left" onclick="minusSlide()">
               <img src="assets/img/arrow-left.png" alt="prev-image">
           </div>
         </div>
-        <div class="ver_img">
-          <div class="img3">
-            <img class="img1" src="assets/img/vertical.png" alt="vertical-image">
-          </div>  
-        </div>
-        <div class="hor_img">
-          <div class="img2">
-            <img class="img1" src="assets/img/horizontal.png" alt="horizontal-image">
-          </div>    
-        </div>
+        <div class="slide invisible">
+          <div class="first_img1">
+            <div class="tel11">
+              <img class="phone11" src="assets/img/vertical.png" alt="vertical-image">
+              <img class="phone11_display" src="assets/img/phone-vertical-display-slide1.png" alt="vertical-image">
+              <div class="slide1_button1"></div>
+            </div>  
+          </div>
+          <div class="second_img1">
+            <div class="tel21">
+              <img class="phone21" src="assets/img/horizontal.png" alt="horizontal-image">
+              <img class="phone21_display" src="assets/img/phone-horizontal-display-slide1.png" alt="horizontal-image">
+              <div class="slide1_button2"></div>
+            </div>    
+          </div>
+         </div>
+         <div class="slide">
+          <div class="first_img2">
+            <div class="tel12">
+              <img class="phone12" src="assets/img/phone-vertical-smal.png" alt="vertical-image">
+              <img class="phone12_display" src="assets/img/phone-vertical-small-display.png" alt="vertical-image">
+              <div class="slide2_button1"></div>
+            </div>  
+          </div>
+          <div class="second_img2">
+            <div class="tel22">
+              <img class="phone22" src="assets/img/phone-vertical-big.png" alt="vertical-image">
+              <img class="phone22_display" src="assets/img/phone-vertical-big-display.png" alt="vertical-image">
+              <div class="slide2_button2"></div>
+            </div>    
+          </div>
+          <div class="third_img2">
+            <div class="tel32">
+              <img class="phone32" src="assets/img/phone-vertical-smal.png" alt="vertical-image">
+              <img class="phone32_display" src="assets/img/phone-vertical-small-display.png" alt="vertical-image">
+              <div class="slide2_button3"></div>
+            </div>    
+          </div>
+         </div>
         <div class="next_img">
-          <div class="arrow-right">
+          <div class="arrow-right" onclick="plusSlide()">
             <img src="assets/img/arrow-right.png" alt="next-image">
           </div>
         </div>
@@ -269,9 +298,9 @@
 					<div id="message_box" class="invisible_mes">
 						<div class="message_block">
 							<p><span id="textm" class="text_message" ></span></p>
-				  		<p><span id="theme class="text_message""></span></p>
-							<p class="describe_message"><span id="describem class="text_message""></span></p>
-							<button id="close_button class="message_button"">CLOSE</button>
+				  		<p><span id="theme" class="text_message"></span></p>
+							<p class="describe_message"><span id="describem" class="text_message"></span></p>
+							<button id="close_button" class="message_button">CLOSE</button>
 						</div>
 					</div>
 				</form>
