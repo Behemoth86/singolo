@@ -21,14 +21,14 @@ MENU.addEventListener('click', (event) => {
 });
 
 //Работа со слайдером
+var slideIndex = 1; //устанавливает текущий слайдер 1
+
+function plusSlide() {
+	showSlides(slideIndex += 1);
+}
 
 function minusSlide() {
   showSlides(slideIndex -= 1);  
-}
-
-// Устанавливает текущий слайд 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
 }
 
 //Показ слайдов
@@ -44,8 +44,26 @@ function showSlides(n) {
     SLIDES[i].style.display = "none";
   }
 
-  SLIDES[slideIndex - 1].style.display = "block";
+	SLIDES[slideIndex - 1].style.display = "flex";
+	if (slideIndex%2==0){SLIDER_BACK.classList.add('slide_blue');}
+	else {SLIDER_BACK.classList.remove('slide_blue');}
 }
+
+//Нажатие кнопок телефона в слайдере
+	var nameid ='';
+	var nameclass = '';
+for (var i=1; i<5; i++){
+	nameid = 'iphone_button'.concat(String(i));
+	nameclass = 'pdisplay'.concat(String(i));
+  document.getElementById(nameid).addEventListener('click', () => {
+	  if (document.getElementById(nameclass).classList.contains('invisible')){
+			document.getElementById(nameclass).classList.add('invisible');
+		}
+		else{
+			document.getElementById(nameclass).classList.remove('invisible');
+		}
+	});	
+}	
 
 
 //Нажатие кнопок в секции портфолио
@@ -102,9 +120,7 @@ BUTTON.addEventListener('click', (e) => {
 					document.getElementById('describem').innerText= 'Описание: ' + describe;
 			}
 			else { document.getElementById('describem').innerText= 'Без описания'; }
-			document.getElementsByTagName('body')[0].classList.remove('hide');
 			document.getElementById('message_box').classList.remove('invisible_mes');
-			document.getElementById('message_block').classList.remove('invisible_mes');
 	}
 });
 
@@ -112,7 +128,6 @@ CLOSE_BUTTON.addEventListener('click', () => {
 	document.getElementById('textm').innerText = '';
 	document.getElementById('theme').innerText = '';
 	document.getElementById('describem').innerText = '';
-	document.getElementsByTagName('body')[0].classList.remove('hide');
 	document.getElementById('message_box').classList.add('invisible_mes');
-	document.getElementById('message_block').classList.add('invisible_mes');
+	document.getElementById('button_submit').reset();
 });
