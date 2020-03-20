@@ -372,9 +372,9 @@ body {
 /* Анимация слайдов */
 .slide_left {
   -webkit-animation-name: slide-left;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.4s;
   animation-name: slide-left;
-  animation-duration: 0.1s;
+  animation-duration: 0.4s;
 }
 
 .slide_right {
