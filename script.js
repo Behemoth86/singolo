@@ -9,6 +9,7 @@ const CLOSE_BUTTON= document.getElementById("close_button");
 const FOOTER= document.getElementById('footerid');
 const SLIDER_BACK = document.getElementById("slider_back");
 const SLIDES = document.getElementsByClassName("slide");
+const MENULINKS = document.getElementsByClassName("menu_link");
 
 
 function delay(f, ms) {
@@ -20,13 +21,13 @@ function delay(f, ms) {
 
 //Активные элементы шапки
 MENU.addEventListener('click', (event) => {
-	MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-	FOOTER.classList.remove('footer_wrap');
-	event.target.classList.add('active');
-	if (event.target.classList.contains('contacts_link')){
-		FOOTER.classList.add('footer_wrap');
-	} 
-});
+	MENU.querySelectorAll('a').forEach(el => {el.classList.remove('active');
+	//FOOTER.classList.remove('footer_wrap');
+	event.target.classList.add('active');});});
+	//if (event.target.classList.contains('contacts_link')){
+		//FOOTER.classList.add('footer_wrap');
+	//} 
+
 
 //Работа со слайдером
 var slideIndex = 1; //устанавливает текущий слайд 1
@@ -183,17 +184,26 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll() {
   const currentPos = window.scrollY;
-  const sect = document.querySelectorAll('a');
+  const sect = document.querySelectorAll('section');
 	const links = document.querySelectorAll('#head-menu a');
+	const headerheight = 95;
 	
   sect.forEach((e) => {
-    if (e.offsetTop <= currentPos && ((e.offsetTop + e.offsetParent.offsetHeight)) > currentPos) { 
+    if (e.offsetTop <= currentPos && (e.offsetTop+ e.offsetHeight) > (currentPos+headerheight)) { 
       links.forEach((a) => {
         a.classList.remove('active');
-        if (e.getAttribute('name') === a.getAttribute('href').substring(1)) {
+        if (e.getAttribute('id') === a.getAttribute('name')) {
           a.classList.add('active');
         }
       })
     }
-  });
+	});
+	if (isfooter()){
+		links.forEach((a) => {a.classList.remove('active');});
+		MENULINKS[MENULINKS.length-1].classList.add('active');
+	}
+}
+
+function isfooter() {
+  return window.pageYOffset >= document.documentElement.offsetHeight - innerHeight
 }
