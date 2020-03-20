@@ -10,6 +10,14 @@ const FOOTER= document.getElementById('footerid');
 const SLIDER_BACK = document.getElementById("slider_back");
 const SLIDES = document.getElementsByClassName("slide");
 
+
+function delay(f, ms) {
+  return function() {
+    setTimeout(() => f.apply(this), ms);
+  }
+}
+
+
 //Активные элементы шапки
 MENU.addEventListener('click', (event) => {
 	MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
@@ -35,13 +43,23 @@ function minusSlide() {
 function showSlides(n) {
   var i;
   if (n > SLIDES.length) {
-    slideIndex = 1
+    slideIndex = 1;
   }
   if (n < 1) {
-      slideIndex = SLIDES.length
+      slideIndex = SLIDES.length;
   }
   for (i = 0; i < SLIDES.length; i++) {
+    //SLIDES[i].style.duration = "1.5s";
+    delay(SLIDES[i].style.transform = "translateX(-100px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-200px)",100);
+    delay(SLIDES[i].style.transform = "translateX(-300px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-400px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-500px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-600px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-700px)",1000);
+    delay(SLIDES[i].style.transform = "translateX(-800px)",1000);
     SLIDES[i].style.display = "none";
+    SLIDES[i].style.transform = "";    
   }
 
 	SLIDES[slideIndex - 1].style.display = "flex";
@@ -50,22 +68,46 @@ function showSlides(n) {
 }
 
 //Нажатие кнопок телефона в слайдере
-	var nameid ='';
-	var nameclass = '';
-for (var i=1; i<5; i++){
-	nameid = 'iphone_button'.concat(String(i));
-	nameclass = 'pdisplay'.concat(String(i));
-  document.getElementById(nameid).addEventListener('click', () => {
-	  if (document.getElementById(nameclass).classList.contains('invisible')){
-			document.getElementById(nameclass).classList.add('invisible');
+  document.getElementById('iphone_button1').addEventListener('click', () => {
+	  if (document.getElementById('pdisplay1').classList.contains('invisible')==false){
+			document.getElementById('pdisplay1').classList.add('invisible');
 		}
 		else{
-			document.getElementById(nameclass).classList.remove('invisible');
+			document.getElementById('pdisplay1').classList.remove('invisible');
 		}
 	});	
-}	
-
-
+  document.getElementById('iphone_button2').addEventListener('click', () => {
+	  if (document.getElementById('pdisplay2').classList.contains('invisible')==false){
+			document.getElementById('pdisplay2').classList.add('invisible');
+		}
+		else{
+			document.getElementById('pdisplay2').classList.remove('invisible');
+		}
+  });
+  document.getElementById('iphone_button3').addEventListener('click', () => {
+	  if (document.getElementById('pdisplay3').classList.contains('invisible')==false){
+			document.getElementById('pdisplay3').classList.add('invisible');
+		}
+		else{
+			document.getElementById('pdisplay3').classList.remove('invisible');
+		}
+	});  
+  document.getElementById('iphone_button4').addEventListener('click', () => {
+	  if (document.getElementById('pdisplay4').classList.contains('invisible')==false){
+			document.getElementById('pdisplay4').classList.add('invisible');
+		}
+		else{
+			document.getElementById('pdisplay4').classList.remove('invisible');
+		}
+  });
+  document.getElementById('iphone_button5').addEventListener('click', () => {
+	  if (document.getElementById('pdisplay5').classList.contains('invisible')==false){
+			document.getElementById('pdisplay5').classList.add('invisible');
+		}
+		else{
+			document.getElementById('pdisplay5').classList.remove('invisible');
+		}
+	});  
 //Нажатие кнопок в секции портфолио
 GALLERY.addEventListener('click',(event) => {
   GALLERY.querySelectorAll('button').forEach (el => el.classList.remove('active_button'));

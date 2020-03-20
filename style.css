@@ -370,20 +370,53 @@ body {
 /*Конец второго слайда*/
 
 /* Анимация слайдов */
-.slider_container .slide {
-	-webkit-animation-name: fade;
+.slide1_right {
+	/*-webkit-animation-name: sdvig;
 	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 0.5s;
+	animation-name: sdvig;
+  animation-duration: 1.5s;*/
+  transform: translateX(100px);
 }
-@keyframes fade {
-			0%,
-			40%,
+/*@keyframes sdvig {
+      0%,
+      10%,
+      20%,
+      30%,
+      40%,
+      50%,
+      60%,
+      70%,
+      80%,
+      90%,
 			100% {
-				transform: scaleX(0.8);
-				-webkit-transform: scaleX(0.8);}
+				transform: translateX(900px)	;
+				-webkit-transform: translateX(900px);}
 }
-
+*/
+ .slide2_right {
+	/*-webkit-animation-name: sdvig2;
+	-webkit-animation-duration: 1.5s;
+	animation-name: sdvig2;
+  animation-duration: 1.5s;*/
+  transform: translateX(100px);
+}
+/*
+@keyframes sdvig2 {
+      0%,
+      10%,
+      20%,
+      30%,
+      40%,
+      50%,
+      60%,
+      70%,
+      80%,
+      90%,
+			100% {
+				transform: translateX(600px)	;
+				-webkit-transform: translateX(600px);}
+}
+*/
 .services{
   color: var(--services-text);
   background-color: var(--services-bg-color);
