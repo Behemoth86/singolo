@@ -228,7 +228,7 @@ body {
 	z-index: 1;
 }
 
-.tel11 { 
+.tel11 {
   height: 458px;
   border-radius: 25px 50px 22px 50px;
   background-color: var(--shadow-image);
@@ -598,6 +598,7 @@ body {
   display:flex;
   flex-wrap: wrap;
   padding-bottom: 60px;
+  margin: auto;
 }
 
 .human{
@@ -654,14 +655,14 @@ body {
 }
 
 .quots_contacts_description{
-  width: 970px;
-  height: 57px;
+  /* width: 970px; */
+  /* height: 57px; */
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
   text-align: left;
   padding-bottom: 45px;
-  word-spacing: -0.1px;  
+  word-spacing: -0.1px;
   }
 
 .quots{
@@ -669,9 +670,9 @@ body {
 }  
 
 form{
-  max-width: 606px;
-  width: 66%;
-  height: 439px;
+  /* max-width: 606px; */
+  width: 58%;
+  /* height: 439px; */
   padding-right: 34px;
   display: flex;
   flex-direction: column;
@@ -694,6 +695,7 @@ form{
 
 input{
   color: var(--input-text-color);
+  width: 74%;
 }
 
 input::placeholder {
@@ -903,11 +905,280 @@ textarea::placeholder {
   padding-right: 79px;
 }
 
-/*img.facebook {
-  border-radius: 50%;
+/*Блок media query
+-----------------------------
+-----------------------------
+-----------------------------
+-----------------------------
+*/
+@media (min-width: 768px) and (max-width: 1019px){
+*{
+	margin:0;
+	padding:0;
+}
+	
+.wrapper{
+  width: 699px;
+  margin: auto;
+}
+.slide {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.tel11 {
+    height: 350px;
+    width: 165px;
+    box-shadow: 10px 12px 0px 10px var(--shadow-image);
 }
 
-img.facebook:hover  {
-  background: var(--facebook-bg-color);
-  color: var(--menu-color-text)
-}*/
+.phone11{
+	height:100%;
+}
+
+.phone11_display {
+    position: absolute;
+    top: 49px;
+    left: 11px;
+    height: 255px;
+    width: 143px;
+}
+
+.first_img1 {
+	padding-top: 126px;
+	padding-right: 32px;
+	padding-left: 72px;
+	padding-bottom: 11px;
+}
+
+.second_img1 {
+	padding: 239px 4px 0 12px;
+}
+
+.slide1_button1 {
+	width: 31px;
+	height: 31px;
+	top: 312px;
+	left: 67px;
+	position: absolute;
+}
+
+.tel21 {
+    height: 165px;
+    width: 350px;
+    border-radius: 25px 50px 15px 50px;
+    box-shadow: 17px 0px 0px 0px var(--shadow-image);
+}
+
+.slide1_button2 {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    top: 59px;
+    left: 7px;
+}
+
+.phone21 {
+    height: 90%;
+    width: 100%;
+}
+
+.phone21_display {
+    top: 10px;
+    left: 46px;
+    height: 129px;
+    width: 255px;
+}
+
+
+/*Здесь править*/
+
+.first_img2 {
+	padding-left: 109px;
+	padding-top: 115px;
+	/* z-index: 1; */
+}
+/*Здесь закончить правку слайдера*/
+.next_img {
+	margin-left: 680px;
+	margin-top: 18px;
+}
+
+.feature {
+    display: flex;
+    width: 50%;
+    max-width: 320px;
+    max-height: 93px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}    
+.wrapper_inner {
+    width: 720px;
+    margin:auto;
+}
+.human {
+    width: 33%;
+    max-width: 223px;
+    padding-right: 17px;
+}
+.human_photo {
+    height: 220px;
+    width: 230px;
+}
+form{
+	width:433px;
+	
+}
+
+.form_input {
+	width: 433px;
+}
+
+#send_button{
+	width: 140px;
+}
+
+.describe_text { 
+    width: 433px;
+}   
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+	*{
+		margin:0;
+		padding:0;
+	}
+		
+	.wrapper{
+		width: 349px;
+		margin: auto;
+	}
+	.slide {
+			width: 100%;
+			position: relative;
+			display: flex;
+	}
+	.tel11 {
+			height: 350px;
+			width: 165px;
+			box-shadow: 10px 12px 0px 10px var(--shadow-image);
+	}
+	
+	.phone11{
+		height:100%;
+	}
+	
+	.phone11_display {
+			position: absolute;
+			top: 49px;
+			left: 11px;
+			height: 255px;
+			width: 143px;
+	}
+	
+	.first_img1 {
+		padding-top: 126px;
+		padding-right: 32px;
+		padding-left: 72px;
+		padding-bottom: 11px;
+	}
+	
+	.second_img1 {
+		padding: 239px 4px 0 12px;
+	}
+	
+	.slide1_button1 {
+		width: 31px;
+		height: 31px;
+		top: 312px;
+		left: 67px;
+		position: absolute;
+	}
+	
+	.tel21 {
+			height: 165px;
+			width: 350px;
+			border-radius: 25px 50px 15px 50px;
+			box-shadow: 17px 0px 0px 0px var(--shadow-image);
+	}
+	
+	.slide1_button2 {
+			width: 31px;
+			height: 31px;
+			border-radius: 50%;
+			top: 59px;
+			left: 7px;
+	}
+	
+	.phone21 {
+			height: 90%;
+			width: 100%;
+	}
+	
+	.phone21_display {
+			top: 10px;
+			left: 46px;
+			height: 129px;
+			width: 255px;
+	}
+	
+	
+	/*Здесь править*/
+	
+	.first_img2 {
+		padding-left: 109px;
+		padding-top: 115px;
+		/* z-index: 1; */
+	}
+	/*Здесь закончить правку слайдера*/
+	.next_img {
+		margin-left: 680px;
+		margin-top: 18px;
+	}
+	
+	.feature {
+			display: flex;
+			width: 50%;
+			max-width: 320px;
+			max-height: 93px;
+			margin-bottom: 30px;
+			overflow: hidden;
+			position: relative;
+	}
+	
+	.gallery_img {
+		justify-content: center;
+	}	
+	
+	.wrapper_inner {
+    width: 338px;
+    margin: auto;
+	}
+	.human {
+    width: 100%;
+    max-width: 338px;
+    padding-right: 0;
+	}
+	.human_photo {
+    height: 330px;
+    width: 100%;
+	}
+	form{
+		width:323px;
+		
+	}
+	
+	.form_input {
+			width: 323px;
+	}
+	
+	#send_button{
+		width: 140px;
+	}
+	
+	.describe_text {
+    width: 323px;
+  }
+
+}	
