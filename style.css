@@ -99,6 +99,10 @@ body {
   align-items: baseline;
 }
 
+.header_accordion{
+	display: none;
+}
+
 .header_logo h1{
 	color: var(--menu-color-text);
 	font-size: 25px;
@@ -666,7 +670,8 @@ body {
   }
 
 .quots{
-  display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }  
 
 form{
@@ -1044,14 +1049,40 @@ form{
 }   
 }
 
-@media (min-width: 375px) and (max-width: 767px){
+@media /*(min-width: 375px) and*/ (max-width: 767px){
 	*{
 		margin:0;
 		padding:0;
 	}
+	.header_accordion{
+		display: block;
+    min-width: 40px;
+    height: 40px;
+    border-top: 2px solid var(--services-bg-button);
+		border-bottom: 2px solid var(--services-bg-button);
+		position: relative;
+	}
+	.header_container>.header_accordion:active ~ .header_menu_container{
+		display: flex;
+	}
+	.center_line {
+    display: inline-block;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--services-bg-button);
+	}
+
+	.header_container{
+		justify-content: center;
+	}
+	.header_menu_container{
+		display:none;
+	}
 		
 	.wrapper{
-		width: 349px;
+		width: 83.73%;
 		margin: auto;
 	}
 	.slide {
@@ -1136,23 +1167,45 @@ form{
 		margin-left: 680px;
 		margin-top: 18px;
 	}
-	
-	.feature {
-			display: flex;
-			width: 50%;
-			max-width: 320px;
-			max-height: 93px;
-			margin-bottom: 30px;
-			overflow: hidden;
-			position: relative;
+
+	.services{
+		padding-right: 0;
 	}
-	
+
+	.services_title {
+		width: 100%;
+		margin-left: 0;
+	}	
+	.title_p {
+		width: 100%;
+		margin-left: 0;
+	}
+	.services_feature{
+		padding-left: 0;
+	}	
+	.feature {
+		width: 100%;	
+	}	
+	.gallery_group_buttons {
+    padding-top: 12px;
+    padding-bottom: 25px;
+	}
 	.gallery_img {
 		justify-content: center;
 	}	
+
+	.artwork, .web_design, .graphic_design {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 15px;
+	}
+	.artwork img, .web_design img, .graphic_design img {
+    width: 100%;
+		height: auto;
+	}
 	
 	.wrapper_inner {
-    width: 338px;
+    width: 100%;
     margin: auto;
 	}
 	.human {
@@ -1161,24 +1214,36 @@ form{
     padding-right: 0;
 	}
 	.human_photo {
-    height: 330px;
+    height: auto;
     width: 100%;
 	}
 	form{
-		width:323px;
+		width:100%;
+		padding: 0;
 		
 	}
-	
 	.form_input {
-			width: 323px;
+			width: 96%;
 	}
-	
 	#send_button{
-		width: 140px;
+		width: 100%;
 	}
-	
 	.describe_text {
-    width: 323px;
+    width: 96%;
   }
+	.contacts {
+		width: 100%;
+		max-width: 350px;
+	}
+	.copyrights_wrapper {
+    justify-content: center;
+	}
+	.copyrights {
+    display:none;
+	}
+
+	.social_links_icons {
+    padding-right: 0px;
+	}
 
 }	

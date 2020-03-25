@@ -189,7 +189,7 @@ function onScroll() {
 	const headerheight = 95;
 	
   sect.forEach((e) => {
-    if (e.offsetTop <= currentPos && (e.offsetTop+ e.offsetHeight) > (currentPos+headerheight)) { 
+    if (e.offsetTop <= currentPos && (e.offsetTop+ e.offsetHeight) > (currentPos/2)) { 
       links.forEach((a) => {
         a.classList.remove('active');
         if (e.getAttribute('id') === a.getAttribute('name')) {
