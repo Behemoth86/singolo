@@ -35,6 +35,14 @@ SMALLMENU.addEventListener('click',() => {
   }
 });
 
+//Нажатие на свободное пространство вне меню
+HEADMENU.addEventListener('click',() => {
+  if (HEADMENU.classList.contains('menu_open_menu')===false){
+    SMALLMENU.classList.remove('menu_open_accordion');
+    HEADMENU.classList.add('menu_open_menu');
+    HEADLOGO.classList.remove('menu_open_logo');
+  }  
+});
 
 //Активные элементы шапки
 MENU.addEventListener('click', (event) => {

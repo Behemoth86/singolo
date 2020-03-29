@@ -304,91 +304,110 @@ body {
 /*Конец первого слайда*/
 /*Второй слайд*/
 .first_img2{
-	padding-left: 226px;
-	padding-top: 115px;
-	z-index: 1;
+  padding-left: 35%;
+  padding-top: 7vw;
+  z-index: 1;
 }
 
 .second_img2{
-	margin-left: -14px;
+	margin-left: -1vw;
 	z-index: 2;
 }
 
 .third_img2{
-  padding-top: 115px;
+  padding-top: 7vw;
   position: relative;
-  margin-left: -2px;
+  margin-left: -0.4vw;
   z-index: 1;
 }
 
 .tel12, .tel32{
-  width: 145px;
-  height: 298px;
+  width: 8.32vw;
+  height: 17.8vw;
   opacity: 0.7;
   border-radius: 19px;
   position: relative;
   background-color: var(--shadow-image);
-  box-shadow: 7px 11px 0px 3px var(--shadow-image);
+  box-shadow: 0.5vw 0.6vw 0px 0.2vw var(--shadow-image);
 }
 
 .tel22{
-  width: 230px;
-  height: 487px;
+  width: 13.7vw;
+  height: 29vw;
   position: relative;
   border-radius: 30px;
   background-color: var(--shadow-image);
-  box-shadow: 12px 13px 0px 7px var(--shadow-image);
+  box-shadow: 0.8vw 1.3vw 0vw 0.2vw var(--shadow-image);
+}
+
+.phone12{
+  width: 100%;
+  height: 100%;
+}
+.phone22{
+  width: 100%;
+  height: 100%;
+}
+.phone32{  
+  width: 100%;  
+  height: 100%;
 }
 
 .phone12_display{
   position: absolute;
-  top: 42px;
-  left: 9px;
+  top: 2.55vw;
+  left: 0.57vw;
+  width: 7.33vw;
+  height: 13vw;
 }
 
 .phone22_display{
   position: absolute;
-  top: 69px;
-  left: 14px;
+  top: 4.1vw;
+  left: 0.8vw;
+  width: 12vw;
+  height: 21.1vw;
 }
 
 .phone32_display{
   position: absolute;
-  top: 42px;
-  left: 9px;  
+  top: 2.55vw;
+  left: 0.5vw;
+  width: 7.33vw;
+  height: 13vw;
 }
 
 .slide2_button1{
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 2vw;
+	height: 2vw;
 	border-radius: 50%;
-	top: 264px;
-	left: 55px;
+	top: 15.7vw;
+	left: 3.2vw;
 	z-index: 5;
-	cursor: pointer;	
+	cursor: pointer;
 }
 
 .slide2_button2{
 	position: absolute;
-	width: 45px;
-	height: 45px;
+	width: 3vw;
+	height: 3vw;
 	border-radius: 50%;
-	top: 433px;
-	left: 92px;
+	top: 25.6vw;
+	left: 5.4vw;
 	z-index: 5;
-	cursor: pointer;	 
+	cursor: pointer;
 }
 
 .slide2_button3{
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 2vw;
+	height: 2vw;
 	border-radius: 50%;
-	top: 263px;
-	left: 56px;
+	top: 15.7vw;
+	left: 3.2vw;
 	z-index: 5;
-	cursor: pointer;	
+	cursor: pointer;
 }
 /*Конец второго слайда*/
 
@@ -966,6 +985,11 @@ textarea::placeholder {
     width: 22.2vw;
     height: 11.1vw;
   }
+  .first_img2 {
+    padding-left: 25%;
+    padding-top: 7vw;
+    z-index: 1;
+}
 }
 
 @media (min-width: 1021px) and (max-width: 1680px) {
@@ -998,6 +1022,9 @@ textarea::placeholder {
     width: 27.2vw;
     height: 13.1vw;
     left: 40.6%;
+  }
+  .first_img2 {
+    padding-left: 25%;
   }
 }
 
@@ -1137,7 +1164,7 @@ form{
 	.header_menu {
     font-size: 6vw;
     line-height: 5vw;
-    width: 79.3vw;
+    width: 78.3vw;
     height: 100vh;
     z-index: 1004;
     background: #2d303a;
@@ -1146,7 +1173,7 @@ form{
     display: block;
   }
 	.header_menu_list{
-    width: 100%;
+    width: 75%;
     float: left;
     margin-left: 19vw;
     margin-top: 10vw;
