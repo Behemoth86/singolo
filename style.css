@@ -35,18 +35,18 @@
 }
 
 
-/*Задаем переменные для дальнейшего удобства*/
+/*Ð—Ð°Ð´Ð°ÐµÐ¼ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ Ð´Ð»Ñ Ð´Ð°Ð»ÑŒÐ½ÐµÐ¹ÑˆÐµÐ³Ð¾ ÑƒÐ´Ð¾Ð±ÑÑ‚Ð²Ð°*/
 :root {
-  --menu-color-text: #fff; /* Цвет текста меню */
-  --slider-light: #f06c64; /* Цвет фона слайдера */
-	--slider-bg-button: #ce5d56; /* Цвет линии в слайдере */
+  --menu-color-text: #fff; /* Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° Ð¼ÐµÐ½ÑŽ */
+  --slider-light: #f06c64; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð° */
+	--slider-bg-button: #ce5d56; /* Ð¦Ð²ÐµÑ‚ Ð»Ð¸Ð½Ð¸Ð¸ Ð² ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ðµ */
 	--slider-blue-light: #648bf0; /**/
 	--slider-blue-bg-button: #348bf0; /**/
-  --menu-bg-color: #2d303a; /* Цвет фона меню */
-  --menu-bg-button: #323746; /* Цвет линии в headere */
-  --services-bg-color: #f2f2f2; /* Цвет фона , пока в разделе сирвисы */
-  --services-bg-button: #ffffff; /* Цвет линии в сервисах */
-  --services-text: #666d89; /* Цвет текста контента, пока в разделе сервисы */
+  --menu-bg-color: #2d303a; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð¼ÐµÐ½ÑŽ */
+  --menu-bg-button: #323746; /* Ð¦Ð²ÐµÑ‚ Ð»Ð¸Ð½Ð¸Ð¸ Ð² headere */
+  --services-bg-color: #f2f2f2; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° , Ð¿Ð¾ÐºÐ° Ð² Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ ÑÐ¸Ñ€Ð²Ð¸ÑÑ‹ */
+  --services-bg-button: #ffffff; /* Ð¦Ð²ÐµÑ‚ Ð»Ð¸Ð½Ð¸Ð¸ Ð² ÑÐµÑ€Ð²Ð¸ÑÐ°Ñ… */
+  --services-text: #666d89; /* Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°, Ð¿Ð¾ÐºÐ° Ð² Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹ */
   --shadow-image: #0002;
   --primary-light-bottom: #ea676b;
   --secondary-dark-bottom: #323645;
@@ -139,12 +139,14 @@ body {
 
 .header_logo_star{
   color:var(--slider-light);
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
+/*
 .header_logo a:hover .header_logo_star{
   visibility:visible; 
 }
+*/
 
 .header_menu {
 	/* display:flex; */
@@ -218,7 +220,7 @@ body {
   display: flex;
 }
 
-/*Первый слайд*/
+/*ÐŸÐµÑ€Ð²Ñ‹Ð¹ ÑÐ»Ð°Ð¹Ð´*/
 .first_img1{
 	padding-top: 18px;
 	padding-right: 32px;
@@ -282,8 +284,8 @@ body {
 	cursor: pointer;
 }
 
-/*Конец первого слайда*/
-/*Второй слайд*/
+/*ÐšÐ¾Ð½ÐµÑ† Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ ÑÐ»Ð°Ð¹Ð´Ð°*/
+/*Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ ÑÐ»Ð°Ð¹Ð´*/
 .first_img2{
 	padding-left: 226px;
 	padding-top: 115px;
@@ -371,9 +373,9 @@ body {
 	z-index: 5;
 	cursor: pointer;	
 }
-/*Конец второго слайда*/
+/*ÐšÐ¾Ð½ÐµÑ† Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑÐ»Ð°Ð¹Ð´Ð°*/
 
-/* Анимация слайдов */
+/* ÐÐ½Ð¸Ð¼Ð°Ñ†Ð¸Ñ ÑÐ»Ð°Ð¹Ð´Ð¾Ð² */
 .slide_left {
   -webkit-animation-name: slide-left;
   -webkit-animation-duration: 0.4s;
@@ -502,7 +504,7 @@ body {
 }
 
 .wrapper_inner{
-  width:960px;
+  width: 962px;
 }
 
 .portfolio{
@@ -562,6 +564,8 @@ body {
 	overflow: hidden;
 	padding-bottom: 47px;
 	padding-top: 5px;
+	padding-left: 5px;
+	width: 100%;
 }
 
 .artwork, .web_design, .graphic_design{
@@ -913,7 +917,7 @@ textarea::placeholder {
   padding-right: 79px;
 }
 
-/*Блок media query
+/*Ð‘Ð»Ð¾Ðº media query
 -----------------------------
 -----------------------------
 -----------------------------
@@ -1037,7 +1041,6 @@ form{
 		border-top: 2.4px solid var(--services-bg-button);
 		border-bottom: 2.4px solid var(--services-bg-button);
 	}
-
 	.center_line {
 		display: inline-block;
     position: absolute;
@@ -1046,7 +1049,6 @@ form{
     height: 2px;
     background-color: var(--services-bg-button);
 	}
-
 	.header_container{
 		justify-content: center;
 	}
@@ -1059,23 +1061,36 @@ form{
 		top: 0;
 		background: #0008;
 	}
-	
+  .header_logo{
+    z-index: 1100;
+  }
+  .menu_open_logo{
+    position: absolute;
+    left: 19vw;
+  }
+  .menu_open_accordion{
+    transform: rotate(90deg);
+  }
+  .menu_open_menu{
+    display: none;
+  }
 	.header_menu {
-font-size: 24px;
-line-height: 29px;
-width: 79.3vw;
-height: 100vh;
-z-index: 1004;
-background: #2d303a;
-padding-top: 150px;
-}
+    font-size: 8vw;
+    line-height: 6vw;
+    width: 79.3vw;
+    height: 100vh;
+    z-index: 1004;
+    background: #2d303a;
+    padding-top: 36vw;
+    margin-top: 0;
+  }
 	.header_menu_list{
-width: 100%;
-float: left;
-margin-left: 223px;
-margin-top: 79px;
-margin-right: 0;
-}
+    width: 100%;
+    float: left;
+    margin-left: 19vw;
+    margin-top: 10vw;
+    margin-right: 0;
+  }
 	
 	.wrapper{
 		width: 83.73%;
@@ -1151,14 +1166,14 @@ form{
 	}
 	
 	
-	/*Здесь править*/
+	/*Ð—Ð´ÐµÑÑŒ Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ*/
 	
 	.first_img2 {
 		padding-left: 109px;
 		padding-top: 115px;
 		/* z-index: 1; */
 	}
-	/*Здесь закончить правку слайдера*/
+	/*Ð—Ð´ÐµÑÑŒ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²ÐºÑƒ ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð°*/
 	.next_img {
 		margin-left: 680px;
 		margin-top: 18px;

@@ -10,6 +10,9 @@ const FOOTER= document.getElementById('footerid');
 const SLIDER_BACK = document.getElementById("slider_back");
 const SLIDES = document.getElementsByClassName("slide");
 const MENULINKS = document.getElementsByClassName("menu_link");
+const SMALLMENU = document.getElementById("head_accord");
+const HEADLOGO = document.getElementById("head_logo");
+const HEADMENU = document.getElementById("head_menu_cont");
 
 
 function delay(f, ms) {
@@ -18,15 +21,31 @@ function delay(f, ms) {
   }
 }
 
+//Кнопка мини меню
+SMALLMENU.addEventListener('click',() => {
+  if (HEADMENU.classList.contains('menu_open_menu')){
+    HEADMENU.classList.remove('menu_open_menu');
+    SMALLMENU.classList.add('menu_open_accordion');
+    HEADLOGO.classList.add('menu_open_logo');
+  }
+  else{
+    HEADMENU.classList.add('menu_open_menu');
+    SMALLMENU.classList.remove('menu_open_accordion');
+    HEADLOGO.classList.remove('menu_open_logo');
+  }
+});
+
 
 //Активные элементы шапки
 MENU.addEventListener('click', (event) => {
-	MENU.querySelectorAll('a').forEach(el => {el.classList.remove('active');
-	//FOOTER.classList.remove('footer_wrap');
+	MENU.querySelectorAll('a').forEach(el => {
+    if (HEADMENU.classList.contains('menu_open_menu')===false){
+      HEADMENU.classList.add('menu_open_menu');
+      SMALLMENU.classList.remove('menu_open_accordion');
+      HEADLOGO.classList.remove('menu_open_logo');
+    }
+    el.classList.remove('active');
 	event.target.classList.add('active');});});
-	//if (event.target.classList.contains('contacts_link')){
-		//FOOTER.classList.add('footer_wrap');
-	//} 
 
 
 //Работа со слайдером
@@ -189,7 +208,7 @@ function onScroll() {
 	const headerheight = 95;
 	
   sect.forEach((e) => {
-    if (e.offsetTop <= currentPos && (e.offsetTop+ e.offsetHeight) > currentPos) { 
+    if (e.offsetTop <= currentPos && (e.offsetTop+ e.offsetHeight/2) > currentPos) { 
       links.forEach((a) => {
         a.classList.remove('active');
         if (e.getAttribute('id') === a.getAttribute('name')) {
